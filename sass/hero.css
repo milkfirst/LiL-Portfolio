@@ -1,0 +1,17 @@
+.hero__image {
+  position: relative;
+  background-image: url("images/hero-bg-blob.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 17.5rem;
+}
+.hero__image::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url("images/Website-Creator.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}/*# sourceMappingURL=hero.css.map */
