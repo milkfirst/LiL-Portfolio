@@ -1,4 +1,9 @@
 .header {
+
+    nav {
+        padding: 24px;
+    }
+
     &__logo {
 
         img {
@@ -11,8 +16,56 @@
 
         > span  {
             display: block;
-            
+            width: 26px;
+            height: 2px;
+            background-color: $darkblue;
+
+            &:not(:last-child)  {
+                margin-bottom: 3px;
+            }
         }
 
     }
+
+    &__links    {
+
+        a   {
+            position: relative;
+            font-size: $font-small;
+            color: $darkgrey;
+            transition: color 300ms ease-in-out;
+
+            &:not(:last-child)  {
+                margin-right: 32px;
+            }
+
+            &::before   {
+                content: "";
+                position: absolute;
+                display: block;
+                height: 5px;
+                left: 0;
+                right: 0;
+                bottom: -30px;
+                background: $yellow;
+                opacity: 0;
+                transition: opacity 300ms ease-in-out;
+            }
+
+            &:hover {
+                color: $yellow;
+
+                &::before   {
+                    opacity: 1;
+                }
+            }
+
+        }
+    }
+
+    &__but  {
+        font-size: $font-small;
+        color: $white;
+    }
+
 }

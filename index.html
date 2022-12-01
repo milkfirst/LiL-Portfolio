@@ -6,22 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="sass/style.scss">
+    <link rel="stylesheet" href="sass/style.css">
     
     <title>My Portfolio</title>
 </head>
 <body>
 
     <header class="header">
-        <nav class="flex flex-jc-sb">
+        <nav class="flex flex-jc-sb flex-ai-c">
             <a href="/" class="header__logo">
-                <img src="images/sample-logo.svg" alt="LiL logo">
+                <img src="images/sample-logo.png" alt="LiL logo">
             </a>
-            <a href="#" class="header__menu">
+            <a href="#" class="header__menu hide-for-desktop">
                 <span></span>
                 <span></span>
                 <span></span>
             </a>
+
+            <div class="header__links hide-for-mobile">
+                <a href="#">About Me</a>
+                <a href="#">Skills</a>
+                <a href="#">Projects</a>
+            </div>
+
+            <a class="button__c header__but hide-for-mobile" href="#" type="button"><span>Let's Connect</span></a></div>
+
         </nav>
     </header>
 
