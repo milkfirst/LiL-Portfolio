@@ -52,6 +52,21 @@ button__c:hover, .button__c:hover {
   border-color: hsl(40deg, 91%, 60%);
   transition: all 0.4s ease 0s;
 }
+button__b, .button__b {
+  text-decoration: none;
+  color: hsl(0deg, 0%, 100%);
+  background: hsl(40deg, 91%, 60%);
+  border-color: hsl(40deg, 91%, 60%);
+  padding: 20px;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
+}
+button__b:hover, .button__b:hover {
+  color: hsl(0deg, 0%, 100%);
+  background: hsl(0deg, 0%, 8%);
+  border-color: hsl(0deg, 0%, 8%);
+  transition: all 0.4s ease 0s;
+}
 
 @media (max-width: 64.9375em) {
   .hide-for-mobile {

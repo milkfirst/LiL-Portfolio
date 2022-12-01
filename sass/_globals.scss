@@ -59,6 +59,23 @@ button, .button {
     transition: all 0.4s ease 0s;
   }
 
+  &__b {
+    text-decoration: none;
+    color: $white;
+    background: $yellow;
+    border-color: $yellow;
+    padding: 20px;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+  }
+  
+    &__b:hover {
+    color: $white;
+    background: $black;
+    border-color: $black;
+    transition: all 0.4s ease 0s;
+  }
+
 }
 
 // Visibility
