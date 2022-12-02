@@ -2,7 +2,7 @@
 
     &__image    {
         position: relative;
-        background-image: url('images/hero-bg-blob.png');
+        background-image: url('/images/bg-hero-mobile.svg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -12,7 +12,7 @@
             content: "";
             width: 100%;
             height: 100%;
-            background-image: url('images/Website-Creator.png');
+            background-image: url('/images/Website-Creator.svg');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center center;

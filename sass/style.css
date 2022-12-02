@@ -122,4 +122,22 @@ button__b:hover, .button__b:hover {
 .header__but {
   font-size: 0.875rem;
   color: hsl(0deg, 0%, 100%);
+}
+
+.hero__image {
+  position: relative;
+  background-image: url("/images/bg-hero-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 17.5rem;
+}
+.hero__image::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/Website-Creator.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }/*# sourceMappingURL=style.css.map */
