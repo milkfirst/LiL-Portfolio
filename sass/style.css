@@ -17,8 +17,19 @@ body {
   line-height: 1.3;
 }
 
+h1, h2, h3 {
+  margin-top: 0px;
+}
+
 a, a:visited, a:hover {
   text-decoration: none;
+}
+
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 2.25rem;
+  padding-top: 2.25rem;
 }
 
 .flex {
@@ -35,14 +46,14 @@ a, a:visited, a:hover {
 }
 
 button, .button {
-  padding: 0.5rem 0.875rem;
+  display: inline-block;
 }
 button__c, .button__c {
   text-decoration: none;
   color: hsl(0deg, 0%, 100%);
   background: hsl(0deg, 0%, 8%);
   border-color: hsl(0deg, 0%, 8%);
-  padding: 20px;
+  padding: 15px;
   display: inline-block;
   transition: all 0.4s ease 0s;
 }
@@ -124,6 +135,13 @@ button__b:hover, .button__b:hover {
   color: hsl(0deg, 0%, 100%);
 }
 
+@media (min-width: 64em) {
+  .hero {
+    display: flex;
+    min-height: 30rem;
+    align-items: center;
+  }
+}
 .hero__image {
   position: relative;
   background-image: url("/images/bg-hero-mobile.svg");
@@ -132,12 +150,31 @@ button__b:hover, .button__b:hover {
   background-position: center center;
   min-height: 17.5rem;
 }
+@media (min-width: 64em) {
+  .hero__image {
+    flex: 3;
+    order: 2;
+    height: 35rem;
+    background-image: url("/images/bg-hero-mobile.svg");
+    background-position: left center;
+  }
+}
 .hero__image::before {
   content: "";
+  position: absolute;
   width: 100%;
   height: 100%;
   background-image: url("/images/Website-Creator.svg");
-  background-size: cover;
+  background-size: 60%;
   background-repeat: no-repeat;
   background-position: center center;
+}
+.hero__text {
+  text-align: center;
+}
+@media (min-width: 64em) {
+  .hero__text {
+    flex: 2;
+    order: 1;
+  }
 }/*# sourceMappingURL=style.css.map */

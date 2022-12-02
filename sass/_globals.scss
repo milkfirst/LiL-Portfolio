@@ -17,8 +17,20 @@ body    {
     line-height: 1.3;
 }
 
+h1, h2, h3  {
+    margin-top: 0px;
+}
+
 a, a:visited, a:hover   {
     text-decoration: none;
+}
+
+// Spacing
+.container  {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 2.25rem;
+    padding-top: 2.25rem;
 }
 
 // Flexbox
@@ -40,14 +52,14 @@ a, a:visited, a:hover   {
 
 // Buttons
 button, .button {
-    padding: 0.5rem 0.875rem;
+    display: inline-block;
 
     &__c {
     text-decoration: none;
     color: $white;
     background: $black;
     border-color: $black;
-    padding: 20px;
+    padding: 15px;
     display: inline-block;
     transition: all 0.4s ease 0s;
   }
