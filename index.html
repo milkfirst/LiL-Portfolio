@@ -44,10 +44,27 @@
         </div>
     </section>
 
-
-
-
+    <section class="mail container">
+        <div class="mail__image"></div>
+        <div class="mail__form">
+            <form class="ContactBox" action="/includes/send.php" method="POST" id="mail-form" data-v-app>
+                <h2 class="container">Let's have a chat.</h2>
+                <input class="contactinfo" ref="fname" type="text" id="firstname" name="firstname" required placeholder="Your First Name">
+                <input class="contactinfo" ref="lname" type="text" id="lastname" name="lastname" required placeholder="Your Last Name">
+                <input class="contactinfo" ref="email" type="email" id="email" name="email" required placeholder="Your Email">
+                <textarea class="contactinfo" ref="message" name="message" id="message" placeholder="Message"></textarea>
+        
+                <p class="mail-header" ref="popUpMessage"></p>
+        
+                <div class="wrapper">
+                    <input @click.prevent="processMail" type="button" class="button__b header__but" value="Submit">
+                </div>                              
+            </form>
+        </div>
+    </section>
     
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>    
     <script type="module" src="js/main.js"></script>
 </body>
 </html>
