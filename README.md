@@ -2,7 +2,10 @@
 Hello, it's so nice to meet you. My name is Lalaine aka LiL, and I'm based in London as well as Toronto.
 My portfolio website contains my best work front-end work and UI/UX design throughout my educational career at Fanshawe College. It also contains my work from graphic design, Cinema 4D and all the other causes of my sleepless nights. Haha.
 Hope you enjoy! :D
- 
+
+# Link
+Access my site at https://home.badlilkiddo.ca/
+
  ```
 # Pick the location of where this repository will be downloaded, for example purposes this will be on your desktop
 
