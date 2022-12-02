@@ -177,4 +177,97 @@ button__b:hover, .button__b:hover {
     flex: 2;
     order: 1;
   }
+}
+
+input[type=text], input[type=email], input[type=tel], textarea {
+  padding: 0.6em;
+  color: #333;
+  border-radius: 4px;
+  width: 250px;
+}
+
+input[type=submit] {
+  display: block;
+  margin-top: 2em;
+  padding: 0.75rem 3.3rem 0.75rem 0.75rem;
+  border-radius: 0.5rem;
+  background-color: #78abeb;
+  cursor: pointer;
+  font-size: 1.2em;
+  color: white;
+  font-weight: bolder;
+}
+input[type=submit]:hover {
+  background-color: #5588c8;
+}
+
+.wrapper {
+  position: relative;
+}
+.wrapper i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 60px;
+  font-size: 1.5em;
+}
+
+@media (min-width: 64em) {
+  .mail {
+    display: flex;
+    min-height: 30rem;
+    align-items: center;
+  }
+}
+.mail__image {
+  position: relative;
+  background-image: url("/images/contact-bg-blob.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 17.5rem;
+}
+@media (min-width: 64em) {
+  .mail__image {
+    flex: 3;
+    order: 1;
+    height: 35rem;
+    background-image: url("/images/contact-bg-blob.svg");
+    background-position: left center;
+  }
+}
+.mail__image::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/Contact.svg");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.mail__form {
+  text-align: center;
+}
+@media (min-width: 64em) {
+  .mail__form {
+    flex: 2;
+    order: 2;
+  }
+}
+
+.contactinfo {
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: 2px solid hsl(0deg, 0%, 100%);
+  background-color: rgb(255, 248, 235);
+  margin-bottom: 22px;
+  transition: 0.3s;
+}
+.contactinfo:hover {
+  background-color: hsl(40deg, 91%, 60%);
+}
+.contactinfo:focus {
+  background-color: hsl(0deg, 0%, 100%);
+  border: 2px solid hsl(201deg, 100%, 14%);
 }/*# sourceMappingURL=style.css.map */
